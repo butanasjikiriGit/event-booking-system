@@ -1,0 +1,95 @@
+[
+	{
+		"id": 1,
+		"name": "Tier I Apex: Artist Meet & Greet",
+		"description": "The ultimate memory-maker. Spend relaxed 1-on-1 time with the artist before doors open, plus front-row catwalk sightlines.",
+		"inclusions": [
+			{
+				"inclusion_id": 1,
+				"inc_desc": "Personal 1-on-1 Artist Meet & Greet"
+			},
+			{
+				"inclusion_id": 2,
+				"inc_desc": "Private 30-min Soundcheck Access"
+			},
+			{
+				"inclusion_id": 3,
+				"inc_desc": "Reserved Front-Row Pit Sightline"
+			},
+			{
+				"inclusion_id": 4,
+				"inc_desc": "Signed Limited-Edition Tour Vinyl"
+			},
+			{
+				"inclusion_id": 5,
+				"inc_desc": "Dedicated On-Site VIP Host Escort"
+			}
+		],
+		"price": 850,
+		"currency": "USD",
+		"capacity": 50,
+		"isActive": true
+	},
+	{
+		"id": 2,
+		"name": "Tier II Backstage: Soundcheck & Lounge",
+		"description": "Step inside the venue before the crowd arrives for an intimate acoustic rehearsal and pre-show hospitality salon.",
+		"inclusions": [
+			{
+				"inclusion_id": 1,
+				"inc_desc": "Private Pre-Show Soundcheck Access"
+			},
+			{
+				"inclusion_id": 2,
+				"inc_desc": "Early Entry via Gate VIP A"
+			},
+			{
+				"inclusion_id": 3,
+				"inc_desc": "Pre-Show Hospitality Lounge & Canapés"
+			},
+			{
+				"inclusion_id": 4,
+				"inc_desc": "Commemorative Metal Laminate Pass"
+			},
+			{
+				"inclusion_id": 5,
+				"inc_desc": "Reserved Lower Bowl Tier 1 Seating"
+			}
+		],
+		"price": 425,
+		"currency": "USD",
+		"capacity": 50,
+		"isActive": true
+	},
+	{
+		"id": 3,
+		"name": "Tier III VIP: Club & Box Suite Pass",
+		"description": "Skip every line and unwind in our private velvet hospitality lounge with elevated panoramic stage sightlines.",
+		"inclusions": [
+			{
+				"inclusion_id": 1,
+				"inc_desc": "Express VIP Fast-Track Entry"
+			},
+			{
+				"inclusion_id": 2,
+				"inc_desc": "Private Box Suite Seating"
+			},
+			{
+				"inclusion_id": 3,
+				"inc_desc": "Complimentary Artisan Welcome Drinks"
+			},
+			{
+				"inclusion_id": 4,
+				"inc_desc": "Dedicated Host Assistance Desk"
+			},
+			{
+				"inclusion_id": 5,
+				"inc_desc": "Official Digital & Collector Pass"
+			}
+		],
+		"price": 290,
+		"currency": "USD",
+		"capacity": 50,
+		"isActive": true
+	}
+]

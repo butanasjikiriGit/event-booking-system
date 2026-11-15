@@ -1,0 +1,46 @@
+[
+	{
+		"id": 1,
+		"name": "Maya Sterling: The Elysian Echoes",
+		"description": "360-degree catwalk stahing, full choir support, and an intimnate acoustic...",
+		"location": "Madison Square Garden, NYC",
+		"capacity": 180,
+		"price": 425,
+		"genre": "Pop & Electronic",
+		"date": "Nov 14, 2026",
+		"image": "/images/card-image1.jpg"
+	},
+	{
+		"id": 2,
+		"name": "Nocturne Symphony: Julian Vance",
+		"description": "Atmospheric classical crossover with private box hospitality, wine service, and…",
+		"location": "Royal Albert Hall, London",
+		"capacity": 120,
+		"price": 290,
+		"genre": "Classical Symphony",
+		"date": "Dec 14, 2026",
+		"image": "/images/card-image2.jpg"
+	},
+	{
+		"id": 3,
+		"name": "Solstive Arts Gatherting 2026",
+		"description": "Open-air amphiltheater sunset sessions with artist hospitality cabanasa and....",
+		"location": "Red Rocks Amphiltheatre, Morrison, CO",
+		"capacity": 240,
+		"price": 250,
+		"genre": "Music Festival",
+		"date": "Dec 21, 2026",
+		"image": "/images/card-image3.jpg"
+	},
+	{
+		"id": 4,
+		"name": "The Paper Kites: Winter",
+		"description": "Candlelit acoustic residency with pre-show songcraft storytelling and signed....",
+		"location": "Royal Albert Hall, London",
+		"capacity": 95,
+		"price": 250,
+		"genre": "Indie & acoustic",
+		"date": "Dec 18, 2027",
+		"image": "/images/card-image4.jpg"
+	}
+]
