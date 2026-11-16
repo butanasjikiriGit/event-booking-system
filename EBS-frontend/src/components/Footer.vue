@@ -3,7 +3,7 @@
 	<div class="container-fluid mt-5">
 		<div class="row">
 			
-			<div class="col-3">
+			<div class="footer-column col-12 col-sm-6 col-lg-3 mb-4">
 				<div class="footer">
 					<p>AURA VIP</p>
 					<p>Making extraordinary concert memories simple, warm, and approachable. Certified VIP passes, friendly hospitality, and unobstructed views.</p>
@@ -17,7 +17,7 @@
 				</div>
 			</div>
 
-			<div class="col-3">
+			<div class="footer-column col-12 col-sm-6 col-lg-3 mb-4">
 				<h4>LIVE SHOWS</h4>
 				<p>
 					Stadium Concerts <br>
@@ -27,7 +27,7 @@
 				</p>
 			</div>
 
-			<div class="col-3">
+			<div class="footer-column col-12 col-sm-6 col-lg-3 mb-4">
 				<h4>PERKS & PASSES</h4>
 				<p>
 					Artist Meet & Greets <br>
@@ -37,7 +37,7 @@
 				</p>
 			</div>
 
-			<div class="col-3">
+			<div class="footer-column col-12 col-sm-6 col-lg-3 mb-4">
 				<h4>TSD AUTHORS</h4>
 				<p>
 					Jikiri Isaiah L. Butanas <br>
@@ -76,14 +76,15 @@
 	.row{
 		display: flex;
 		justify-content: space-between;
-		margin: 0px 10% 0px 10%;
+		margin: 0 auto;
+		max-width: 1200px;
 	}
 
-	.col-3{
+	.footer-column{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-start;
 	}
 
 
@@ -130,13 +131,13 @@
 
 
 
-	.col-3 h4{
+	.footer-column h4{
 		color: #2B2F38;
 		font-size: 12px;
 		font-weight: bold;
 	}
 
-	.col-3 p{
+	.footer-column p{
 		color: #595E6B;
 		font-size: 12px;
 	}
@@ -161,6 +162,36 @@
 	.lower-footer2{
 		display: flex;
 		gap: 20px;
+	}
+
+	.footer-input-box2{
+		display: flex;
+	}
+
+	@media (max-width: 767px){
+		.container-fluid{
+			padding: 25px;
+		}
+
+		.row{
+			row-gap: 10px;
+		}
+
+		.lower-footer{
+			padding: 10px 0;
+		}
+	}
+
+	@media (max-width: 400px){
+		.footer-input-box2{
+			align-items: stretch;
+			flex-direction: column;
+			gap: 10px;
+		}
+
+		.footer-input-box2 button{
+			margin-left: 0;
+		}
 	}
 
 </style>

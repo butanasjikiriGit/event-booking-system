@@ -10,7 +10,7 @@
 
 		<div class="row">
 			
-			<div class="col-6">
+			<div class="col-12 col-lg-6">
 				<div class="left-box">
 					<div>
 						<p>Verified Stage Front Pit & Lounge Map</p>
@@ -39,7 +39,7 @@
 				</div>
 			</div>
 
-			<div class="col-6">
+			<div class="col-12 col-lg-6">
 				<div class="right-box">
 					<div class="inner-right-box">
 						<p class="right-box-text">Gate VIP A</p>

@@ -20,7 +20,7 @@
 				</div>
 			</div>
 
-			<div class="col-3" v-for="event in Events" :key="event.id">
+			<div class="col-12 col-sm-6 col-lg-3 mb-4" v-for="event in Events" :key="event.id">
 				<div class="card-event-box">
 					<div class="image" :style="{ backgroundImage: `url(${event.image})` }">
 						<p>{{event.genre}}</p>

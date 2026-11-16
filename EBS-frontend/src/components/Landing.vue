@@ -2,7 +2,7 @@
 	
 	<div class="container">
 		<div class="row">
-			<div class="col-6">
+			<div class="col-12 col-lg-6">
 				<div class="landing-1">
 					<p class="text-1"><i class="bi bi-stars"></i> UNFORGETTABLE LIVE MUSIC MOMENTS</p>
 					<h1>Experience live shows closer than ever.</h1>
@@ -18,7 +18,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-6">
+			<div class="col-12 col-lg-6">
 				<div class="landing-2">
 					<div class="box-1">
 						<p><i class="bi bi-record-circle-fill"></i> Now Booking: North American Tour</p>

@@ -15,7 +15,7 @@
 				<p>Choose the level of access you love - from intimate 1 on 1 artist encounters to relaxed lounge hospitality before the main lights dim.</p>
 			</div>
 			
-			<div class="col-4" v-for="pkg in packageData" :key="pkg.id">
+			<div class="col-12 col-md-6 col-lg-4 mb-4" v-for="pkg in packageData" :key="pkg.id">
 				<div class="package-box">
 					<p>{{pkg.capacity}} {{pkg.capacity > 1 ? 'Slots Left' : 'Slot Left'}}</p>
 					<p>{{pkg.name}}</p>

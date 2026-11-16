@@ -5,15 +5,15 @@
 			<div class="col-12">
 				<form>
 					<div class="search-filter-box">
-						<div class="inner-box-1">
-							<div class="filter-1">
+						<div class="inner-box-1 row g-3">
+							<div class="filter-1 col-12 col-lg-5">
 								<label>SEARCH ARTIST, EVENT OR VENUE</label>
 								<div class="search">
 									<span><i class="bi bi-search"></i></span>
 									<input type="text" placeholder="e.g., Maya Sterling, Royal Albert...">
 								</div>
 							</div>
-							<div class="filter-2">
+							<div class="filter-2 col-12 col-sm-6 col-lg-2">
 								<label>CATEGORY</label>
 								<select>
 									<option>All Categories</option>
@@ -23,7 +23,7 @@
 									<option>Music & Fiestival</option>
 								</select>
 							</div>
-							<div class="filter-3">
+							<div class="filter-3 col-12 col-sm-6 col-lg-2">
 								<label>STATUS</label>
 								<select>
 									<option>All Active</option>
@@ -31,7 +31,9 @@
 									<option>Ongoing</option>
 								</select>
 							</div>
-							<button><i class="bi bi-search"></i> Find Passes</button>
+							<div class="col-12 col-lg-3">
+								<button class="w-100"><i class="bi bi-search"></i> Find Passes</button>
+							</div>
 						</div>
 						<hr>
 						<div class="inner-box-2">
@@ -63,17 +65,16 @@
 		position: relative;
 	}
 
-	.filter-1{
-		width: 100%;
-	}
-	.filter-2{
-		width: 100%;
-	}
-	.filter-3{
-		width: 100%;
-	}
 	.filter-4{
 		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	.inner-box-2{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		gap: 20px;
 	}
 
@@ -84,10 +85,7 @@
 
 
 	.inner-box-1{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		gap: 10px;
+		align-items: end;
 	}
 
 	label{
@@ -115,7 +113,7 @@
 
 	input{
 		padding: 10px;
-		width: 450px;
+		width: 100%;
 		border: none;
 		background-color: #F5F0E8;
 		border-radius: 0px 100px 100px 0px;
@@ -150,7 +148,7 @@
 		color: white;
 		border-radius: 100px;
 		font-size: 14px;
-		margin-top: 25px;
+		margin-top: 0;
 	}
 
 
@@ -172,12 +170,11 @@
 		font-size: 12px;
 		font-weight: 500;
 		border-radius: 100px;
+		margin: 0;
 	}
 
 	.inner-box-2 button{
-		position: absolute;
-		right: 20px;
-		bottom: 20%;
+		flex-shrink: 0;
 		color: #D97757;
 		font-size: 14px;
 		font-weight: bold;
@@ -189,6 +186,36 @@
 
 	form{
 		display: contents;
+	}
+
+	@media (max-width: 767px){
+		.inner-box-2{
+			align-items: flex-start;
+			flex-direction: column;
+		}
+
+		.filter-4{
+			gap: 8px;
+		}
+
+		.filter-4 p:first-child{
+			width: 100%;
+			padding-left: 0;
+		}
+
+		.inner-box-2 button{
+			align-self: flex-end;
+		}
+	}
+
+	@media (max-width: 576px){
+		.search-filter-box{
+			padding: 18px;
+		}
+
+		.filter-4 p{
+			padding: 7px 12px;
+		}
 	}
 
 
