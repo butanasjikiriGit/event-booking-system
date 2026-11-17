@@ -1,0 +1,22 @@
+[
+	{
+		"id": 1,
+		"firstName": "Donald",
+		"lastName": "Trump",
+		"email": "donal@mail.com",
+		"passwordHash": "adjsdghajksdhajksdhajksdhajksdhajsk",
+		"mobileNo": "09111111111",
+		"isAdmin": false,
+		"createdAt": "Dec, 25 2021"
+	},
+	{
+		"id": 2,
+		"firstName": "Rodrigo",
+		"lastName": "Duterte",
+		"email": "rodrigo@mail.com",
+		"passwordHash": "adjsdghajksdhajksdhajksdhajksdhajsk",
+		"mobileNo": "09222222222",
+		"isAdmin": false,
+		"createdAt": "Oct, 11 2019"
+	}
+]
