@@ -1,0 +1,32 @@
+[
+	{
+		"booking_id": 1,
+		"name": "Maya Sterling: The Elysian Echoes",
+		"bookingReference": "#AUR-8829-NY",
+		"quantity": 2,
+		"unitPriceAtBooking": 425,
+		"totalAmount": 425,
+		"currency": "USD",
+		"bookingStatus": "confirmed",
+		"paymentStatus": "paid",
+		"bookedAt": "Dec, 11, 2026",
+		"image": "/images/card-image1.jpg",
+		"location": "Madison Square Garden, NYC",
+		"genre": "Pop & Electronic"
+	},
+	{
+		"booking_id": 2,
+		"name": "Nocturne Symphony: Julian Vance",
+		"bookingReference": "#AUR-5104-LDN",
+		"quantity": 1,
+		"unitPriceAtBooking": 250,
+		"totalAmount": 250,
+		"currency": "USD",
+		"bookingStatus": "cancelled",
+		"paymentStatus": "refunded",
+		"bookedAt": "Jul, 18, 2026",
+		"image": "/images/card-image2.jpg",
+		"location": "Royal Albert Hall, London",
+		"genre": "Classical Symphony"
+	}
+]
