@@ -1,7 +1,12 @@
 <template>
 	<nav class="navbar navbar-expand-xl">
 		<div class="container-fluid nav-container">
-			<router-link class="navbar-brand" to="/">AURA VIP</router-link>
+			<router-link class="navbar-brand" to="/">
+				<span class="navbar-brand-icon">
+					<i class="bi bi-ticket-perforated-fill" aria-hidden="true"></i>
+				</span>
+				<span><span class="text-dark">AURA</span> VIP</span>
+			</router-link>
 
 			<button
 				class="navbar-toggler"
@@ -33,10 +38,24 @@
 						<input type="text" class="form-control" placeholder="Search artist, shows...">
 					</div>
 
-					<div class="profile">
-						<img class="profile-img" src="https://upload.wikimedia.org/wikipedia/commons/1/19/January_2025_Official_Presidential_Portrait_of_Donald_J._Trump.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Profile">
-						<p>Trump</p>
-						<i class="bi bi-chevron-down"></i>
+					<div class="dropdown profile-dropdown">
+						<button
+							id="accountMenuButton"
+							class="profile dropdown-toggle"
+							type="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+							aria-controls="accountMenu"
+						>
+							<img class="profile-img" src="https://upload.wikimedia.org/wikipedia/commons/1/19/January_2025_Official_Presidential_Portrait_of_Donald_J._Trump.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Profile">
+							<span class="profile-name">Trump</span>
+							<i class="bi bi-chevron-down"></i>
+						</button>
+						<ul id="accountMenu" class="dropdown-menu dropdown-menu-end profile-menu" aria-labelledby="accountMenuButton">
+							<li><router-link class="dropdown-item" to="/profile">Profile</router-link></li>
+							<li><router-link class="dropdown-item" to="/bookings">My Bookings</router-link></li>
+							<li><router-link class="dropdown-item" to="/login">Log out</router-link></li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -44,145 +63,4 @@
 	</nav>
 </template>
 
-<style scoped>
-.navbar{
-	background-color: #FAF7F2;
-	border: solid 1px #EAE5DE;
-	padding: 16px 24px;
-}
-
-.nav-container{
-	gap: 20px;
-}
-
-.navbar-brand{
-	color: #2B2F38;
-	font-size: 28px;
-	font-weight: 600;
-}
-
-.navbar-collapse{
-	align-items: center;
-	gap: 20px;
-}
-
-.nav-links{
-	background-color: #F4EFEB;
-	padding: 10px 20px;
-	border: solid 2px #EAE5DE;
-	border-radius: 100px;
-}
-
-.navbar-nav{
-	gap: 18px;
-}
-
-.nav-link{
-	color: #2B2F38;
-	font-size: 14px;
-	white-space: nowrap;
-}
-
-.nav-link:hover,
-.router-link-active{
-	color: #D97757;
-}
-
-.nav-actions{
-	display: flex;
-	align-items: center;
-	gap: 10px;
-}
-
-.search-box{
-	width: 230px;
-}
-
-.search-box .input-group-text,
-.search-box .form-control{
-	background-color: #FFFFFF;
-	border-color: #EAE5DE;
-}
-
-.search-box .input-group-text{
-	border-right: none;
-	border-radius: 100px 0 0 100px;
-}
-
-.search-box .form-control{
-	border-left: none;
-	border-radius: 0 100px 100px 0;
-}
-
-.profile{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-	padding: 5px 10px;
-	background-color: #FFFFFF;
-	border: solid 1px #EAE5DE;
-	border-radius: 100px;
-}
-
-.profile p{
-	margin: 0;
-	font-size: 13px;
-	font-weight: bold;
-}
-
-.profile i{
-	font-size: 13px;
-}
-
-.profile-img{
-	width: 30px;
-	height: 30px;
-	object-fit: cover;
-	border-radius: 100%;
-}
-
-@media (max-width: 1199px){
-	.navbar-collapse{
-		margin-top: 15px;
-	}
-
-	.nav-links{
-		width: 100%;
-		padding: 10px 15px;
-		border-radius: 20px;
-	}
-
-	.navbar-nav{
-		gap: 0;
-	}
-
-	.nav-link{
-		padding: 10px;
-	}
-
-	.nav-actions{
-		margin-top: 12px;
-	}
-}
-
-@media (max-width: 576px){
-	.navbar{
-		padding: 12px;
-	}
-
-	.navbar-brand{
-		font-size: 24px;
-	}
-
-	.nav-actions{
-		align-items: stretch;
-		flex-direction: column;
-	}
-
-	.search-box,
-	.profile{
-		width: 100%;
-	}
-}
-</style>
+<style scoped src="../assets/navbar.css"></style>

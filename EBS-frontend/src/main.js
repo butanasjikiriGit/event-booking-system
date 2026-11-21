@@ -25,7 +25,14 @@ const router = createRouter({
 		{
 			path: '/login',
 			name: 'login',
-			component: Login
+			component: Login,
+			meta: { authPage: true }
+		},
+		{
+			path: '/register',
+			name: 'register',
+			component: Register,
+			meta: { authPage: true }
 		},
 		{
 			path: '/checkout',
@@ -58,6 +65,7 @@ const router = createRouter({
 // Route imports
 import Home from './pages/Home.vue';
 import Login from './pages/Login.vue';
+import Register from './pages/Register.vue';
 import Checkout from './pages/Checkout.vue';
 import Ticket from './pages/Ticket.vue';
 import Bookings from './pages/Bookings.vue';
