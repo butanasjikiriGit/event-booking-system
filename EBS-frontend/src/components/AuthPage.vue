@@ -191,7 +191,7 @@ function goHome() {
 							</div>
 
 							<RouterLink class="primary-button" to="/">
-								Continue to Home &amp; Catalog
+								{{ isSignIn ? 'Sign in to Aura' : 'Create My Account' }}
 								<i class="bi bi-arrow-right" aria-hidden="true"></i>
 							</RouterLink>
 						</form>
