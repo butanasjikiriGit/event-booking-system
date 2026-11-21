@@ -78,7 +78,7 @@
 	display: flex;
 	align-items: center;
 	gap: 10px;
-	color: #2B2F38;
+	color: #D97757;
 	font-size: 28px;
 	font-family: "Epilogue:Bold", sans-serif;
 	font-weight: 700;
