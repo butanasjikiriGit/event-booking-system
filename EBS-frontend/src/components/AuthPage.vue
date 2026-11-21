@@ -1,6 +1,6 @@
 <script setup>
 import { computed, ref } from 'vue';
-import { RouterLink } from 'vue-router';
+import { RouterLink, useRouter } from 'vue-router';
 
 const props = defineProps({
 	mode: {
@@ -12,10 +12,10 @@ const props = defineProps({
 const isSignIn = computed(() => props.mode === 'signin');
 const showPassword = ref(false);
 const remember = ref(true);
-const submitted = ref(false);
+const router = useRouter();
 
-function handleSubmit() {
-	submitted.value = true;
+function goHome() {
+	router.push({ name: 'home' });
 }
 </script>
 
@@ -127,7 +127,7 @@ function handleSubmit() {
 							</p>
 						</div>
 
-						<form class="auth-form" @submit.prevent="handleSubmit">
+						<form class="auth-form" novalidate @submit.prevent="goHome">
 							<label v-if="!isSignIn" class="field">
 								<span class="field-label">
 									<b>FULL NAME</b>
@@ -153,7 +153,7 @@ function handleSubmit() {
 								<span class="field-label">
 									<b>PASSWORD</b>
 									<template v-if="isSignIn">
-										<button type="button" @click="submitted = false">Forgot password?</button>
+										<button type="button">Forgot password?</button>
 									</template>
 									<small v-else>At least 8 characters</small>
 								</span>
@@ -190,17 +190,10 @@ function handleSubmit() {
 								</span>
 							</div>
 
-							<button class="primary-button" type="submit">
-								{{ submitted
-									? (isSignIn ? 'Welcome back to AURA' : 'Account ready')
-									: (isSignIn ? 'Sign In to AURA' : 'Create My Account') }}
+							<RouterLink class="primary-button" to="/">
+								Continue to Home &amp; Catalog
 								<i class="bi bi-arrow-right" aria-hidden="true"></i>
-							</button>
-							<p v-if="submitted" class="success-message" role="status">
-								{{ isSignIn
-									? 'Your secure sign-in request is ready.'
-									: 'Your AURA VIP profile is ready to begin.' }}
-							</p>
+							</RouterLink>
 						</form>
 
 						<div class="divider">
