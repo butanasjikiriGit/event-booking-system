@@ -46,6 +46,11 @@ const router = createRouter({
 			path: '/profile',
 			name: 'profile',
 			component: Profile
+		},
+		{
+			path: '/admin',
+			name: 'admin',
+			component: AdminDashboard
 		}
 	]
 });
@@ -62,6 +67,7 @@ import Checkout from './pages/Checkout.vue';
 import Ticket from './pages/Ticket.vue';
 import Bookings from './pages/Bookings.vue';
 import Profile from './pages/Profile.vue';
+import AdminDashboard from './pages/AdminDashboard.vue';
 
 
 

@@ -1,0 +1,47 @@
+[
+	{
+		"id": 1,
+		"package_Id": "PKG-001",
+		"act_Title": "Curbside Welcome & Host Greeting",
+		"startsAt": "4:30 PM",
+		"endsAt": "5:00 PM",
+		"meetLoc": "Gate VIP A (7th Ave Subterranean Entrance)",
+		"instruction": "Present your bookingReference."
+	},
+	{
+		"id": 2,
+		"package_Id": "PKG-001",
+		"act_Title": "Private Rehearsal & Soundcheck Access",
+		"startsAt": "5:15 PM",
+		"endsAt": "6:00 PM",
+		"meetLoc": "Main Stage Front Pit Catwalk",
+		"instruction": "No flash photography during acoustic numbers..."
+	},
+	{
+		"id": 3,
+		"package_Id": "PKG-001",
+		"act_Title": "1-on-1 Artist Encounter & Hospitality Salon",
+		"startsAt": "6:15 PM",
+		"endsAt": "7:15 PM",
+		"meetLoc": "Backstage Greenroom Salon 01",
+		"instruction": "No flash photography during acoustic numbers."
+	},
+	{
+		"id": 4,
+		"package_Id": "PKG-002",
+		"act_Title": "Soundcheck & Hospitality Lounge Entry",
+		"startsAt": "5:15 PM",
+		"endsAt": "6:30 PM",
+		"meetLoc": "Gate VIP A • East Lounge",
+		"instruction": "Arrive 15 minutes prior to soundcheck doors."
+	},
+	{
+		"id": 5,
+		"package_Id": "PKG-003",
+		"act_Title": "Private Box Suite & Maestro Champagne Reception",
+		"startsAt": "6:15 PM",
+		"endsAt": "7:15 PM",
+		"meetLoc": "Royal Albert Hall • South Gallery Entrance",
+		"instruction": "Black tie or evening smart attire recommended."
+	}
+]
