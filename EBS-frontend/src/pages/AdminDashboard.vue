@@ -1,14 +1,4 @@
-<script setup>
-		
-	import { ref } from 'vue';
-	import Events from '../data/Event.json';
-	import Package from '../data/Package.json';
-	import Activities from '../data/Activities.json';
-	import Booking from '../data/Booking.json';
 
-	const activeTab = ref('events');
-
-</script>
 
 <template>
 	
