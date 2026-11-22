@@ -24,7 +24,7 @@
 
 				<div class="row">
 					
-					<div class="col-3">
+					<div class="col-12 col-md-6 col-lg-3">
 						<div class="status-ledger-box">
 							<div class="status-heading">
 								<p>ACTIVE VIP ALLOCATIONS</p>
@@ -38,7 +38,7 @@
 						</div>
 					</div>
 
-					<div class="col-3">
+					<div class="col-12 col-md-6 col-lg-3">
 						<div class="status-ledger-box">
 							<div class="status-heading">
 								<p>Escrowed GMV (Settled)</p>
@@ -52,7 +52,7 @@
 						</div>
 					</div>
 
-					<div class="col-3">
+					<div class="col-12 col-md-6 col-lg-3">
 						<div class="status-ledger-box">
 							<div class="status-heading">
 								<p>Meet & Greet Capacity</p>
@@ -68,7 +68,7 @@
 						</div>
 					</div>
 
-					<div class="col-3">
+					<div class="col-12 col-md-6 col-lg-3">
 						<div class="status-ledger-box">
 							<div class="status-heading">
 								<p>Venue Ticket Check-Ins</p>
@@ -92,28 +92,26 @@
 			
 			<div class="navigation">
 					
-				<ul>
-					<li><button
+				<button
 							:class="{ active: activeTab === 'events' }"
 							@click="activeTab='events'"
-						><i class="bi bi-calendar-check"></i> Events</button></li>
-					<li><button
+						><i class="bi bi-calendar-check"></i> Events</button>
+				<button
 							:class="{ active: activeTab === 'packages' }"
 							@click="activeTab='packages'"
-						><i class="bi bi-box"></i> VIP Packages</button></li>
-					<li><button
+						><i class="bi bi-box"></i> VIP Packages</button>
+				<button
 							:class="{ active: activeTab === 'activities' }"
 							@click="activeTab='activities'"
-						><i class="bi bi-clock"></i> Package Activities</button></li>
-					<li><button
+						><i class="bi bi-clock"></i> Package Activities</button>
+				<button
 							:class="{ active: activeTab === 'bookings' }"
 							@click="activeTab='bookings'"
-						><i class="bi bi-qr-code-scan"></i> Booking & Tickets</button></li>
-					<li><button
+						><i class="bi bi-qr-code-scan"></i> Booking & Tickets</button>
+				<button
 							:class="{ active: activeTab === 'users' }"
 							@click="activeTab='users'"
-						><i class="bi bi-people-fill"></i> User & Role Management</button></li>
-				</ul>
+						><i class="bi bi-people-fill"></i> User & Role Management</button>
 
 			</div>
 
@@ -472,6 +470,7 @@
 		padding: 20px;
 		border: solid 1px #E3DBD0;
 		border-radius: 20px;
+		margin-bottom: 20px;
 	}
 
 	.status-heading{
@@ -547,13 +546,9 @@
 		box-shadow: 0px 0px 20px #E8E8E8;
 		background-color: white;
 		border: solid 1px #E3DBD0;
-	}
-
-	ul{
-		list-style: none;
 		display: flex;
 		gap: 10px;
-		margin: 0;
+		flex-wrap: wrap;
 	}
 
 	.navigation button{
